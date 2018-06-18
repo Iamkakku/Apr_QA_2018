@@ -1,0 +1,172 @@
+What is variable?
+- Container. name of memory location.
+
+3 types  types  :-
+local, instance and static .
+
+instance variable:- inside class but outside method. it is not declared as static.
+
+Local variable:- declare inside method.
+Static variable;- when you are declaring variable as static it cannot be local.
+
+class Example{
+ int a=100;// instance var
+static int b=20;//static 
+
+void print(){
+
+int n=10; //local variable
+
+
+}
+}
+
+
+Data type;- represent different values stored in variable.
+
+Two types Data types:-
+Primitive 
+non primitive 
+
+Operator :-
+
++ Addition ---- 5+3=8
+- (subtraction)---5-3=2
+*(multiplication--4*2=8
+/  (division)---4/2=2
+% (modulus)--4/2--0
+++ ( increment)----> increase value by 1.-- int b=3; b++ -> 4
+-- (decrements)-----> decrease value by 1. int b=3 ; b-- -> 2
+
+a++, a--      ----> post increment and post decrements
+--a, ++a    ------> pre increment and pre decrement  
+
+----------------------------------------CODE--------------------------------------------
+public class DataTypeExample {
+
+public static void main(String[] st) {
+
+
+
+// int a=10;
+// float f=a;// int ---->float
+// 
+// float f1=10.5f;
+// 
+// int a1=(int)f;// float --->int cannot...type casting 
+// 
+// byte b1=(byte)a;// int---> byte ....
+// 
+// 
+// 
+// 
+// 
+// //int b=20;
+// //int c=a+b;
+// 
+// System.out.println(a);
+// System.out.println(f);
+
+
+int a=10;
+int b=20;
+
+// System.out.println(a+b);//30
+// System.out.println(a-b);
+// System.out.println(a/b);
+// System.out.println(a%b);
+
+// System.out.println(a++);//10 
+// System.out.println(a);
+// System.out.println(b++);
+// System.out.println(b);
+// System.out.println(a); //10
+// System.out.println(--a); //9
+// System.out.println(a++);//-------output----9++
+// System.out.println(a);///////////--------10
+// 
+// System.out.println("---------------------------");
+// 
+//System.out.println(a++ + b++);// 10+20 =30 ; 10+1, 20+1
+//System.out.println(a++ + ++a);// 10 (10+1=11) + (11+1) 12==10+12=22
+System.out.println(a++ + a++); // 21
+System.out.println(a);//12
+
+//System.out.println(a++ + b++);.// 11+21=32
+
+
+
+// System.out.println(b);// 20
+// System.out.println(++b); // 21
+// System.out.println(b++);//---------OUPUT---- 21
+// 
+// System.out.println(b);// 22
+// 
+
+// 10
+// 11
+// 20
+// 21
+// 
+
+}
+
+
+
+}
+
+
+
+//int data=50;//instance variable 
+//static int m=100;//static variable 
+//void method(){ 
+// int n=90;//local variable 
+// System.out.println(data);
+// System.out.println(m);
+
+------------------------------------------------------------------------------------------------------
+Control Statements:-
+
+If else ---- 
+if 
+if else
+if else if ladder
+nested if 
+if(age>18) {// 20<18 ---false
+// 
+// System.out.println(" Age is greater than 18.....");
+// }
+// else if(age<18 && age>5){
+// System.out.println(" age between 5 to 18");
+// }
+// else
+// {
+// System.out.println(" wrong input");
+// }
+// 
+
+switch
+switch(age)//=10
+
+{
+case 10 : System.out.println("10");break;
+case 20 : System.out.println("20");break;
+case 30 : System.out.println("30");break;
+default: System.out.println("not found");
+
+}
+for loop
+
+for ( initiation ; condition ; incr/decr)
+
+while loop
+Do while Loop
+Break--
+Continue
+
+----------
+Comments in Java
+single line -----     //
+Multi line --- /*  this is multi line comments*/
+Documentation Comment ----- / **  this is document */
+
