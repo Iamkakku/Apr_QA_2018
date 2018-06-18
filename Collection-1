@@ -1,0 +1,174 @@
+Why we need of collection framework:-
+int a=10;
+ int b=20,
+int c=30,
+ we can go Array .... if 500 values. 
+
+ Student[] s= new Student[100];
+it represent large number of values. --advantage
+ Limitation of array:-
+fixed size
+array can hold homogeneous.( only same type of object)
+
+s[0]=new Student();
+s[1]=new Customer();
+Array doesn't implement with standard data structure. 
+ Collection:-
+ if you want to represent a group of individual objects as a single entity then we should go for collection.
+
+Collection framework:- it defines several classes and interfaces which can be used a group of objects as single entity. 
+
+Collections:- 
+so compare with  Array
+ 1. grow-able size.
+2. it can hold homogeneous and heterogeneous 
+
+ Interfaces of collection framework:-
+ collection;- collection interface defines the most common methods which are applicable for any collection object.
+Collection.sort(al);
+Note:---- there is no concrete class which implements collection interface directly. 
+difference Collection and Collections:-
+Collection is an interface whichrepresent a group of individual objects as a single entity then we should go for collection.
+ Collections:- it is an utility class present in java.util package to define several utility methods ( like sorting , searching ..) for collection objects. 
+
+List:- 
+It is child interface of collection.
+if we want to represent group of individual objects as a single entity where duplicates are allowed and insertion order preserved then we should go for List.
+
+ Set :- 
+It is child interface of collection.
+if we want to represent group of individual objects as a single entity where duplicates are not allowed and insertion order not preserved then we should go for Set. 
+
+SortedSet:
+It is child interface of  Set
+if we want to represent group of individual objects as a single entity where duplicates are not allowed but all objects should be inserted according to some sorting order then we should go for SortedSet.
+
+NavigableSet:- 
+It is the child interface of sortedSet if defines several methods for navigation purposes. 
+
+ Queue:- 
+It is child interface of collection.
+if we want to represent a group of individual objects prior to processing then we should go for Queue. 
+FIFO - METHOD (First In First Out)
+ 
+NOTE:--- All the above interfaces (Collection, List, Set, SortedSet, NavigableSet, Queue ) meant for representing a group of individual objects.
+
+Map :- If you want to represent a group of object as key value pairs then we should go for Map Interface.
+it is not child interface of collection
+ emp id      name
+101               seema
+102                dhara
+Both key and Value are objects, duplicated keys are not allowed but value can be duplicates. 
+
+SortedMap:- it is child interface of Map.
+If you want to represent a group of object as key value pairs according to sorting order of keys then we should go for sorted Map. 
+NaviagableMap:- 
+it is child interface of sortedMap. It defines several utility methods for navigation purpose. 
+
+
+If you want own sorting..
+ Comparable (I)
+ Comparator (I)
+
+ Cursors:- 
+Enumerations(I)
+Iterator(I)
+ListIterator(I)
+ ArrayList :-
+it is Class. 
+dynamic Array for sorting the elements. Implements List Interface
+it can contains duplicate elements
+maintain insertion order
+non synchronized  class.
+allows random access because array works at the index basis.
+manipulation is slow in arrayList. 
+
+ Class Test{
+
+public static void main(Srting[] arg)
+{
+ArrayList<String> al=new ArrayList<String>(); // creating ArrayList
+al.add("banana");
+al.add("apple");
+al.add("cherry");
+// Traversing list through Iterator
+Iterator itr=al.iterator();
+while(itr.hasNext()){
+S.o.p(itr.next());
+}}
+LinkedList 
+ it is class.
+it uses doubly linked list to store elements
+can contains duplicates
+non synchronized
+manipulation is fast because no shifting needs to be occurred
+
+ difference between ArrayList and LinkedList:- (IQ)
+ArrayList uses dynamic array to store the elements.
+LinkedList uses doubly linked list  to store the elements.
+manipulation is slow in arraylist. bcz internally uses array. if any elements removed from the array, all bits are shifted in memory. 
+manipulation is fast in linkedlist. bcz no shifting is required in memory. 
+ArrayList is better for sorting and accessing data. 
+LinkedList is Better for Manipulating data. 
+
+ HashSet:- 
+It stores the elements using mechanism called hashing.
+Contains unique elements only.
+
+ TreeSet:- 
+unique elements 
+access and retrieval times are quiet fast.
+maintains ascending order.
+
+
+
+ HashMap :- 
+it contains value based on key.
+it contains unique elements 
+it may have one null key and multiple null values.
+it maintains no order. 
+
+ TreeMap:-
+contains value based on key. 
+only unique elements.
+cannot have null key but can have multiple null values. 
+ it maintains ascending order. 
+
+HashMap vs. Hashtable. (IQ)
+ 
+HashMap is non synchronized class. Hashtable is synchronized.
+ HashMap allows one null key and multiple null values. Hashtable doesnt allow any null key or value.
+HashMap is not legacy. Hashtable is legacy class.
+ HashMap is fast. Hashtable is slow.
+
+Difference between Comparable and Comparator (IQ)
+Comparable provides Single sorting sequence
+Comparator provides Multiple sorting sequence.
+Comparable provides compareTo() method to sort elements. 
+Comparator provides compare() method to sort.
+Comparable is present in java.lang
+Comparator is present in java.util
+
+ArrayList vs. Vector
+
+ArrayList is not synchronized. 
+Vector is Synchronized.
+ArrayList is fast.
+Vector is slow.
+ArrayList is not not legacy . 1.2 
+Vector is legacy class.
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
