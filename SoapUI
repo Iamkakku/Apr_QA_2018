@@ -1,0 +1,97 @@
+What is SERVICE?
+Service available over web.
+communication between two or more web application.
+
+We have two types of Web services.
+SOAP:- Simple Object Access Protocol
+                Medium - HTTP(POSt)
+                 Format:- XML
+                 heavy weight
+ inbuilt security (w3c standard)
+REST:- Representational State Transfer
+           
+               Medium - HTTP(POSt)
+                 Format:- XML/JSON/TEXT
+                   light  weight
+ easy to understand
+ implements some method to get security
+
+
+WSDL :- Web Services Description Language. 
+
+if you are consumer what you need to know
+what are services available?
+what are request and response parameters?
+how to call that web services?
+
+ service provider will publish doc that contains all attributes...interface-XML 
+it describe the functionalities of webservices
+
+UDDI - Universal Description , Discovery and Integration.
+
+
+What  we have test in web services testing?
+Functional testing, Security Testing, Load testing, status code , RESPONSE Message, content type, data types , repose data, valid invalid status.
+
+
+SoapUI --TOOL - OPEN SOURCE-- SOAP  web services test--
+now test REST request---
+
+HTTP Methods:-(IQ)
+POST-- TO CRETE RESOURCE
+GET--TO RETRIEVE INFORMATION FROM RESOURCE 
+PUT--- UPDATE RESOURCE
+DELETE-- TO DELETE RESOURCE
+
+Status code:-(IQ)
+200- OK - success 
+201- Created- POST, PUT
+400- Bad Request-
+404 - Page not found- 
+405- Method not allowed- 
+500- internal server error- 
+
+https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html
+
+Assertions:- comparison between Expected and actual output.
+ 
+addition
+ int a=20 
+int b=10
+ actual -30
+
+answer:- expected op- 30
+
+
+so if actual output and expected both are same so test case pass
+ if actual output and expected both are not same so test case fail.
+
+SOAP Project :-
+
+project level -> test suite - test case- test steps
+
+test suite- set of cases
+test case - set of test steps..
+
+ 3 TYPES OF TESTING
+FUNCTIONAL TETSING
+LOAD TESTING
+SECURITY TESTING
+
+Assertion:- (IQ)
+contains
+not contains
+invalid HTTP Status Code Assertions
+valid HTTP StaTUS CODE
+
+
+Data Source :- take input data from external file (excel,csv,txt)
+Data Sink:- save your response in external file....
+Data Gen:---to update data
+
+
+
+
+
+
+
