@@ -1,0 +1,74 @@
+Why we need UNIX:-
+ server side operation - most of the company will use UNIX.
+ 
+ window:- one user can login you can perform task.
+
+ 3 types OS :- 
+ single user single task :- only person can login . and only task he can perform.
+Ms. DOS...
+CUI - COMMAND LINE USER INTERFACE
+single user multiple tasks:- One person can login but multiple tasks. 
+ eg. Windows- GUI- Graphical user interface. 
+GUI :- Will take more time 
+CUI :- execution time is less for CUI.
+multiple users multiple tasks:- UNIX OR Linux- at time multiple users can login in system and they multiple task together. 
+
+
+UNIX :- OS - s/w:- collections of program .--- Portable OS:- platform independent 
+written C language.
+1950'S
+LINUX :- 1991- OPEN SOURCE .
+ 
+ OS:- 
+unix , linux....
+windows , mac --
+ios, android, ------mobile 
+
+TaskS of OS:-
+
+ memory management 
+ file management 
+resource allocation
+device allocation 
+process management
+ 
+UNIX Shell :- program which used as an interface between User and UnIX OS. 
+it is not part of kernel . it can directly communicate with server.
+ Kernel :- it is master program. control resources in computer. resource allocation different tasks - habdle  
+Setup:- 
+https://cloud.google.com/
+https://www.cygwin.com/
+
+
+ Commands:-
+ pwd:- current directory 
+ls -l :- list of all files
+mkdir name:- to create new directory 
+rmdir name:- to remove directory 
+cd dirname:- to go that path 
+cat > filename:- to create file 
+cat filename:- to display content of file 
+cat >> filename :- to append data in that particular file .
+cp oldname newfilename:- wil copy data from old file to newfile.
+cp oldname1 oldname2:- will override data in oldname2.
+rm filename:- remove file
+mv filename dirname :- to move your file physically.
+ln filename1 newfile2 :- link two  files.
+ wc :-- count total number of lines , words, characters.
+wc -l filename:- total numbers of line
+wc -w filename :- total number of words
+wc -c filename:- total number of characters. 
+wc filename:- total number lines, words, characters for that file. 
+
+
+
+
+
+
+
+
+
+
+
+
+
