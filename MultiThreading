@@ -1,0 +1,83 @@
+multi threading ---- process of executing multiple thread simultaneously.
+
+ thread -- sub process.
+
+Advantages of multi threading 
+ doesnt block user. thread is independent.
+can perform many operation together. 
+
+ Thread life cycle:-
+five states.
+new
+Runnable
+Runing
+Blocked
+terminated
+
+New:- it is in new state if you created instance of thread class but before the invocation of start() method.
+Runnable:- ready to run thread.
+Running:- thread scheduler has selected
+Blocked:- thread is still alive but is currently not eligible to run.
+Terminated:- dead state when its run() method exits.
+
+
+How to create thread. (IQ)
+there are two ways to create a thread.
+By extending Thread Class
+By implementing Runnable interface : only method --- run() 
+ 
+start() - thread class method. it is used to start newly created thread. (IQ)
+
+ sleep() - method of thread class used to sleep thread for specified amount of time. (IQ)
+
+can we start thread twice? (IQ)
+
+NO, after starting thread, it can be never start again. if you do .. IllegalThreadStateException
+
+ Naming Thread:-
+getName()
+setName(str)
+
+Priority:-
+Thread.MIN_PRIORITY- 1
+Thread.MAX_PRIORITY-10
+Thread.NORM_PRIORITY --5
+ getPriority()
+ Synchronization in Java:- (IQ)
+capability to control the access of multiple threads to any shared resources.
+Synchronized class
+Synchronized method :-- lines 50 .... 
+Synchronized block : 
+
+synchronized void display(int n)
+{}
+synchronized(this)
+{}
+Dead Lock in java(IQ)
+both thread are waiting for each other to release the lock. the condition is called deadlock. 
+Daemon thread in Java
+service provider. gc-- 
+depends on the user thread life. low priority thread
+
+ Garbage Collection:-(IQ)
+ garbage is a referenced objects. Garbage collection is way to destroy the unused objects.
+Java it is performed automatically. -- better memory management. 
+Garbage collector  is part of JVM.
+ Difference between final, finally and finalize. (most IQ)....
+finalize() method:- 
+finalize() is invoked each before the object is garbage collected.  clean up process. 
+NOTE:- Garbage collector of JVM collects only those objects that are created by new keyword. So if you have created any object without new, you can use finalize method to perform cleanup processing. 
+
+gc() - method is used to invoke the garbage collector to perform clean up.
+public class Example{
+public static void main (){
+
+system.gc(); // 
+}
+
+public void finalize(){
+// perform  --- task ....,
+close file. 
+remove database...
+}
+}
