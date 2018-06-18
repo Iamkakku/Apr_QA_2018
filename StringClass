@@ -1,0 +1,119 @@
+What is String?
+String is not a keyword in java. String final class in java. lang package. 
+
+ final is keyword in java 
+final with variable -  cant not change variable value. 
+final with class name-  cant inherit that that. 
+ final with methods.. -- cannot override that method. 
+
+ final int a=10;
+int a=50;
+
+How many ways to create string objects in java?
+there two ways:- 
+1. using new operator.
+2. using string literals.
+
+String s= new String("welcome");// using will create new string object 
+String s1= "welcome" // using this it will search in memory is there any object "welcome" is present or not ? . if it is present this will point out that value. but if no then create new object. 
+
+ String is immutable ---> cannot modify, cannot change . for security we can store sensitive data.
+here paste code----------
+
+ 
+Java STRING COMPARISON 
+by equals --compare content 
+by ==operator -- compare reference 
+ STRING BUFFER AND STRING BUILDER ( most important )
+ CLASS --- BOTH ARE MUTABLE 
+ string BUFFER - SYNCHRONIZED , SLOW
+ string BUILDER - NON SYNCHRONIZE, FASTER THAN BUFFER
+ difference between string and string buffer?
+ string is immutable and string buffer is. mutable. 
+
+
+
+
+package com.edu.april;
+
+public class StringExample {
+
+public static void main(String[] st){
+// String s=new String("welcome");
+// // welcome java
+// // s.concat("java"); // string is immuatle.
+// s=s.concat("java"); //----- it will create ...
+// //String s2=s.concat(s);
+// 
+// System.out.println(s);
+
+
+// 
+// String s1="Sachin"; 
+// String s2="Sachin"; //
+// String s3=new String("Sachin"); //
+// String s4="Saurav"; 
+//// System.out.println(s1.equals(s2));//true 
+//// System.out.println(s1.equals(s3));//true 
+//// System.out.println(s1.equals(s4));//false 
+//// System.out.println(s1==s2); //true
+//// System.out.println(s1==s3);// fasle
+//// System.out.println(s2.equals(s3));// true
+// String s5=s1.concat(s2); 
+// System.out.println(s5);
+// String s=50+30+"Sachin"+40+40; 
+// System.out.println(s);
+String s="welCome ava gbgf hi hello by bye bye"; 
+// System.out.println(s.substring(6));
+// System.out.println(s.substring(0,6));
+// System.out.println(s.toUpperCase());
+// System.out.println(s.toLowerCase());
+// System.out.println(s.length()); 
+//System.out.println(s.charAt(0));
+// System.out.println(s);
+// System.out.println(s.trim());
+// System.out.println(s.replace('e','o'));
+// System.out.println(s);
+// System.out.println(s.contains("me"));
+// String[] words=s.split("\\s");// split my stirng using whitespace
+// for(String w:words){ 
+// System.out.println(w); 
+// } 
+
+// char[] ch=s.toCharArray(); 
+// for(int i=0;i<ch.length;i++){ 
+// System.out.print(ch[i]); 
+// } 
+// StringBuffer sb=new StringBuffer("Hello "); 
+// sb.append("Java");
+// System.out.println(sb);
+
+StringBuilder sb=new StringBuilder("Hello "); 
+sb.append("Java");//now original string is changed 
+System.out.println(sb);//prints Hello Java 
+
+
+
+
+
+
+
+
+
+}
+
+
+
+{
+
+}
+}
+
+
+
+
+ 
+
+
+
+
