@@ -1,0 +1,105 @@
+
+PageObject Pattern :- one framework 
+     separate folder. --- page classe-10 pages
+test classes--10 classes. 
+base -- common codes....
+
+ loginpage
+loginTest
+
+close and quit....
+
+WAIT IN SELENIUM:- 
+Why we need wait? 
+Selenium can handle the upcoming actions only when the element is fully loaded in the DOM.
+
+Exception:- 
+Element not found 
+staleElementException
+
+Wait two type:- (IQ)
+Implicit wait :- 5 secs... check in the 0th sec if the element is found it will not wait if not found in 0th sec then waits completely for the time specified.. onece in that 20.
+20 ---it apply for all element.
+driver.manage().timeouts().implicitlywait(20,TimeUnit.SECONDS);
+
+Explicit wait:- it checks for 0th sec if element is found it will not wait. if not found then checks for every 500ms. until the specified time
+
+Mouse hover:- 
+Action Class---you can 
+Action action= new Action(driver);
+action.MoveToElement(element).perform(); // 
+
+/ if sometime 2-3 actions together
+// action.movetoElement(element).build().perfom();
+
+Frame-
+driver.switchTo.frame(Frame1);
+driver.swithTo().defaultContent();
+
+
+Alert:- (IQ)
+different types of alerts: 
+ it can be web based  and windows based.
+
+note:- Selenium will not support windows based pop up
+ Only Pop Up is web based you can use selenium .
+For Web based popup
+ Alert - interface 
+Alert alert=driver.swithTo().alert();
+
+alert.dismiss()
+alert.accept()
+alert.sendkeys("fkjhgfd")
+getText()
+
+for Windows based pop up 
+1 Robot Class
+it is seperate class in java.AWT which will allow us to perform multiple task .
+ we can simulate keyborad event in selenium. 
+you have to use methods of that class
+
+keyPress()
+keyRelease()
+
+Robot r=new Robot();
+r.KeyPress(KeyEvent.VK_ENTER);
+r.KeyRelease(KeyEvent.VK_ENTER);
+
+2 Auto it.
+ $windowHandle=WinGetHandle("File Upload")
+WinActivate($windowHandle)
+ControlFocus("File Upload","","Edit")
+ControlSetText("File Upload","","[Class:Edit;Instance:1]","C:\Users\16692\Pictures\Screenshots\1.jpg")
+Sleep(2000)
+ControlClick("File Upload","","[Class:Button;Instace:1]")
+
+
+Excel Reader:-
+
+
+FileInputStream
+XSSFWorkbook
+XSSFSheet
+XSSFCell
+XSSFRow
+
+
+
+XSSF-HSSF
+.XLS---hSSF
+.XLSX--xssf
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
