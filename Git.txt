@@ -1,0 +1,172 @@
+Git - Shen - June 19, 2018
+
+What is version control and why do we need it?
+
+sourcecode  - 1.0
+sourcecode  - 2.0
+sourcecode  - 3.0  3.1
+
+MVP - minimum value product
+
+after 3 weeks of version 1.0 release
+change requirement
+1.1
+
+Version control tools
+
+SVN  vs Git
+
+
+file tree -- folder structure for version control
+
+Git advantages
+- DVCS
+- SCM source code management
+- RCS revision control system
+
+----distributed
+----Branch, forking, merging
+----traceability
+----performance (internal algorithm is different)
+----secure -->SHA1 secure hashing algorithm
+----flexible 
+
+-- standard
+
+
+ how do we incorporate the 1st version changes to the later version
+  1.1
+
+   2.0 - git merge 
+   3.0
+
+
+gerrit - code review
+
+branching
+
+project 
+20+ project talent screen
+
+40 team members
+
+
+Git installation
+https://git-scm.com/download/win
+execute the exe file
+
+
+local repository - it is in the c / d drive of our system
+central repository - distributed, visible to all team members, u need credentials 
+                  to access the central repo.
+staging - adding file from local drive to the local repository
+
+
+
+Commands
+
+git clone url
+
+git init
+git status
+   red -- to be added to the local repo
+   green -- added to local repo
+
+git add .  -- adds to the local repo ----staging
+git add filename
+
+git commit -m "message"
+
+git push origin master 
+---enter the credentials
+
+git config --global user.email  "email"
+git config --global user.name "github"
+
+
+https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf
+
+---------------------------------------------------------------------------------------------
+What is version control? Why do we need version control?
+
+Version control software keeps track of every modification to the code in a special kind of database. If a mistake is made, developers can turn back the clock and compare earlier versions of the code to help fix the mistake while minimizing disruption to all team members.
+the source code is a repository of the invaluable knowledge and understanding about the problem domain that the developers have collected and refined through careful effort. 
+
+The code for a project, app or software component is typically organized in a folder structure or "file tree". One developer on the team may be working on a new feature while another developer fixes an unrelated bug by changing code, each developer may make their changes in several parts of the file tree.
+
+Great version control systems facilitate a smooth and continuous flow of changes to the code rather than the frustrating and clumsy mechanism of file locking - giving the green light to one developer at the expense of blocking the progress of others.
+
+Git
+Git is a Distributed VCS, a category known as DVCS
+Git is free and open source.
+VCS are sometimes known as SCM (Source Code Management) tools or RCS (Revision Control System).
+the primary benefits you should expect from version control are as follows.
+A complete long-term change history of every file.
+Branching and merging. 
+Traceability. 
+
+Performance/Security/Flexibility/Version control with Git
+Git is a mature, actively maintained open source project originally developed in 2005 by Linus Torvalds, the famous creator of the Linux operating system kernel.
+Performance : Committing new changes, branching, merging and comparing past versions are all optimized for performance. The algorithms implemented inside Git take advantage of deep knowledge about common attributes of real source code file trees
+
+Security
+The content of the files as well as the true relationships between files and directories, versions, tags and commits, all of these objects in the Git repository are secured with a cryptographically secure hashing algorithm called SHA1.
+
+Flexibility
+in support for various kinds of nonlinear development workflows, in its efficiency in both small and large projects and in its compatibility with many existing systems and protocols.
+
+Version control with Git
+Git is a de facto standard
+the predominance of Git also means that many third party software tools and services are already integrated with Git including IDEs, and our own tools like DVCS desktop client Sourcetree, issue and project tracking software, Jira, and code hosting service, Bitbucket.
+
+Distributed development also makes it easier to scale your engineering team. If someone breaks the production branch in SVN, other developers can’t check in their changes until it’s fixed. With Git, this kind of blocking doesn’t exist. Everybody can continue going about their business in their own local repositories.
+The ultimate result of feature branches, distributed development, pull requests, and a stable community is a faster release cycle. These capabilities facilitate an agile workflow where developers are encouraged to share smaller changes more frequently.
+
+
+
+Git Installation
+https://git-scm.com/download/win
+Git bash
+
+Create account
+For central repo…  create account...they will give credentials...clone  
+
+Create repository
+
+
+
+Local Repository - folder in local system
+Central Repository - distributed , team members with authentication, everyone can access with credential
+
+Commands:-
+git init----to initialize your local repository.
+git clone  url ------to get files from central repo...
+git status---- to see status of your files
+                       file name --red color---- file is not present in local repo...
+                       file name ---green colo----- file is present in local repo...
+git add , ----to send all file from your system to local repo
+git add filename ---for that particular  file from system to local repo..
+git commit -m "this is for msg"
+
+          stagging:---- send your file or project from your system to local repo that call staging 
+
+
+ send file from system ------> local repo....
+
+git push origin master-----push your file from local repo to central repo...
+ git pull origin master ---fetch file from central repo to local repo.
+
+
+
+
+ git config --global user.email " email"
+git config --global user.name " github"   
+
+
+
+
+References
+
+https://www.atlassian.com/git/tutorials/what-is-version-control
+
+https://git-scm.com/docs
