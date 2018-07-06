@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MavenClass">
+<test name="Regression Test" enabled="true">
+		<classes>
+			<class name="com.rest.HttpClient_automation.TalentScreen">
+
+			</class>
+
+		</classes>
+
+	</test>
+
+</suite>
